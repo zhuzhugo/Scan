@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".Activity.MycloudApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/push"
+        android:label="我的物流云"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.InformationActivity" />
+        <activity android:name=".Activity.HomeActivity" />
+        <activity
+            android:name=".Activity.DailogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".loginHttp.LoginHttpActivity"></activity>
+        <activity android:name=".loginHttp.Register_http_Activity" />
+        <activity android:name=".Activity.Xin_ban_ci_Activity" />
+        <activity android:name=".Activity.QueryActivity" />
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.YunDanActivity">
+
+        </activity>
+    </application>
+
+</manifest>

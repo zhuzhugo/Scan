@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context="com.example.administrator.myapplication.Activity.MainActivity">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"></ListView>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="发运车次"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_above="@+id/lv"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginLeft="60dp"/>-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/fab"-->
+            <!--android:src="@mipmap/add"-->
+            <!--app:rippleColor="#78ff00"-->
+            <!--app:backgroundTint="#1fdaac"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="#AEEEEE"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:text="发运车次"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/textView13" />
+
+        <Button
+            android:text="新建"
+            android:background="@drawable/but"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/fab"
+            android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

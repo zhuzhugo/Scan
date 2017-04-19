@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xin_ban_ci_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.Activity.Xin_ban_ci_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AEEEEE">
+        <TextView
+            android:text="新建班次"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/textView14" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="网点"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/et_wangdian"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:hint="请输入线路"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_xianlu"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/tb_new"
+        android:layout_toLeftOf="@+id/imageView11"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/more"
+        android:layout_alignTop="@+id/et_xianlu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/imageView11"
+        android:layout_alignBottom="@+id/et_xianlu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/more"
+        android:layout_alignBottom="@+id/et_wangdian"
+        android:layout_alignRight="@+id/imageView11"
+        android:layout_alignEnd="@+id/imageView11"
+        android:id="@+id/imageView12"
+        android:layout_alignTop="@+id/et_wangdian"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/more"
+        android:layout_alignTop="@+id/et_siji"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_alignEnd="@+id/imageView12"
+        android:id="@+id/imageView13"
+        android:layout_alignBottom="@+id/et_siji"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView12" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/more"
+        android:layout_alignBottom="@+id/et_chepai"
+        android:layout_alignRight="@+id/imageView13"
+        android:layout_alignEnd="@+id/imageView13"
+        android:id="@+id/imageView14"
+        android:layout_alignTop="@+id/et_chepai"
+        android:layout_alignLeft="@+id/imageView13"
+        android:layout_alignStart="@+id/imageView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:hint="请选择司机"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_siji"
+        android:clickable="true"
+        android:focusable="false"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/et_wangdian"
+        android:layout_alignStart="@+id/et_wangdian" />
+
+    <TextView
+        android:text="司机"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/et_siji"
+        android:layout_alignBottom="@+id/et_siji"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Button
+        android:text="新建"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but_create"
+        android:layout_marginTop="24dp"
+        android:background="#5CACEE"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="车牌"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="31dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:hint="请选择发货网点"
+        android:gravity="center"
+        android:ems="10"
+        android:focusable="false"
+        android:background="@drawable/edittext"
+        android:id="@+id/et_wangdian"
+        android:clickable="true"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/et_xianlu"
+        android:layout_toLeftOf="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView12" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:hint="请选择车牌"
+        android:gravity="center"
+        android:ems="10"
+        android:focusable="false"
+        android:background="@drawable/edittext"
+        android:id="@+id/et_chepai"
+        android:clickable="true"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toLeftOf="@+id/imageView14"
+        android:layout_toStartOf="@+id/imageView14" />
+
+    <TextView
+        android:text="线路"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/et_xianlu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

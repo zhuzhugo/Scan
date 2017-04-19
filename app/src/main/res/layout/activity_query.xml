@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.administrator.myapplication.Activity.QueryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/query_toolbar"
+        android:background="#AEEEEE"
+        ></android.support.v7.widget.Toolbar>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/et_query"
+        android:background="@drawable/edittext"
+        android:hint="输入信息后，点击搜索按钮查询"
+        android:gravity="center"
+        android:layout_below="@+id/query_toolbar"
+        android:textSize="20sp"
+        android:layout_toStartOf="@+id/iv_search"
+        android:layout_toLeftOf="@+id/iv_search" />
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xrecyclerview"
+        android:layout_below="@+id/et_query"
+        >
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <TextView
+        android:text="信息查询"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_query"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/search"
+        android:id="@+id/iv_search"
+        android:clickable="true"
+        android:layout_below="@+id/query_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

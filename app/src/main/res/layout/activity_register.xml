@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.login.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/back"
+        android:scaleType="fitXY"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入用户名"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:id="@+id/et_name_register_http" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入密码"
+        android:ems="10"
+        android:layout_below="@+id/et_name_register_http"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:id="@+id/et_pass_register_http" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请再次输入密码"
+        android:password="true"
+        android:ems="10"
+        android:layout_below="@+id/et_pass_register_http"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/et_twice_input_http" />
+
+    <Button
+        android:text="注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_twice_input_http"
+        android:layout_alignLeft="@+id/et_twice_input_http"
+        android:layout_alignStart="@+id/et_twice_input_http"
+        android:layout_marginTop="47dp"
+        android:id="@+id/bt_register_http"
+        android:background="#48D1CC"/>
+
+    <Button
+        android:text="返回登陆界面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_register_http"
+        android:layout_alignRight="@+id/et_twice_input_http"
+        android:layout_alignEnd="@+id/et_twice_input_http"
+        android:id="@+id/bt_back_http"
+        android:background="#48D1CC"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignBaseline="@+id/et_twice_input_http"
+        android:layout_alignBottom="@+id/et_twice_input_http"
+        android:layout_alignRight="@+id/et_twice_input_http"
+        android:layout_alignEnd="@+id/et_twice_input_http" />
+
+</RelativeLayout>
